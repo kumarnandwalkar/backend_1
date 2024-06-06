@@ -13,3 +13,17 @@ to create backend first step is npm init
 git ignore removes the files that we dont want to add or contains sensitive info or such files that 
 are big in size and can be recreated for example node modules, this file is large in size and may increase the size of git repo, and generally is not pushed to github (not a good practice)
 
+while creating a production server in paid platforms like digitalocean, railway, render, azure etc
+there are sertain steps that are followed by every devops engineer while deploying the program
+1. alloting resources, like which machine, which plan, amount that will be paid etc,
+2. environment variables, here as we have declared variables in our .env file that variables are to be declared here and they should be declared in both global and in our project section aswell so that if the global is not able to provide the env variable then that variable will be provided by project env varibale
+3. info, this is the region of server etc, 
+4. review
+once all these things are done we are given live app url, this url will be the location where our code will be running on their server,and
+we can also change the domain name here
+
+
+
+// majorly when we are using DB with backend most of the problems i.e 50-60% of problems of db are cuz of only one thing that server is of different continent
+
+

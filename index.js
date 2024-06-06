@@ -3,6 +3,9 @@ const express = require('express')
 const app = express()
 const port = 3000
 
+const variable_1_json = 
+{"name":"John", "age":30, "car":null}  // this is how json is sent in backend
+
 app.get('/', (req, res) => {        // this is a get request and in backend we will be always creating functions 
   res.send('Hello World!')          // always res after calling '/' is written here and returned with res.send 
   // note: never ever forget to put slash(/)
@@ -14,6 +17,11 @@ app.get('/twitter', (req,res) => { // this get req will be triggerd only on /twi
 
 app.get('/login', (req, res) => {
     res.send('<h1>please login on this website</h1>')  // this get req will send h1 tag
+})
+
+app.get('/json', (req, res) => {
+    res.json(variable_1_json)      // this is how the json data is handeld using res.json for more such handelings visit the 
+    // documentation of express
 })
 
 app.listen(process.env.PORT, () => {                    // to use dot env, we have to use process.env.... followed by whatever u want 
