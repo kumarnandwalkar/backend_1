@@ -1,0 +1,15 @@
+mainly the databse connectivity code is written in index file
+app.js file me config vagera ki files hoti hai like cookies and all
+constants.js iss file me enams, db name hote hai
+
+
+listen (in express) 
+/ : home rout
+/login : login setup
+
+
+to create backend first step is npm init
+
+git ignore removes the files that we dont want to add or contains sensitive info or such files that 
+are big in size and can be recreated for example node modules, this file is large in size and may increase the size of git repo, and generally is not pushed to github (not a good practice)
+
